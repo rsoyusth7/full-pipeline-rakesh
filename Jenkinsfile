@@ -223,6 +223,8 @@ pipeline {
             // Archive SBOM
             archiveArtifacts artifacts: 'sbom.json', fingerprint: true
             archiveArtifacts artifacts: 'sbom.txt', fingerprint: true
+            archiveArtifacts artifacts: 'zap_report.html', fingerprint: true
+
             
             // // Cleanup
             // cleanWs()
